@@ -2,27 +2,33 @@
 
 ## Project setup
 ```
-npm install
+cnpm install
+```
+
+## Only Production Environment
+```
+npm run build:win // 生成bundle.json
+node server // 运行生产环境的服务
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+// npm run serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+// npm run build
 ```
 
 ### Run your tests
 ```
-npm run test
+// npm run test
 ```
 
 ### Lints and fixes files
 ```
-npm run lint
+// npm run lint
 ```
 
 ### Customize configuration
