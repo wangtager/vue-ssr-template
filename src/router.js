@@ -8,6 +8,10 @@ export function createRouter(){
     mode: 'history', //一定要是history模式
     routes: [
       {
+        path: '/',
+        component: () => import(/* webpackChunkName: "demo" */ './components/HelloWorld.vue')
+      },
+      {
         path: '/demo',
         component: () => import(/* webpackChunkName: "demo" */ './components/Demo.vue')
       },

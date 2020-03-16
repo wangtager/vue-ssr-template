@@ -1,6 +1,6 @@
 <template>
   <div>
-    Demo Pages
+    <span>Demo Pages</span>
   </div>
 </template>
 

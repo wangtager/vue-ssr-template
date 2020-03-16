@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev:serve": "cross-env WEBPACK_TARGET=node node ./server/ssr.js",
+    "dev": "concurrently \"npm run serve\" \"npm run dev:serve\" ",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -11,8 +13,10 @@
     "build:win": "npm run build:server && move dist\\vue-ssr-server-bundle.json bundle && npm run build:client && move bundle dist\\vue-ssr-server-bundle.json"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "koa": "^2.11.0",
+    "koa-mount": "^4.0.0",
     "koa-router": "^8.0.8",
     "koa-send": "^5.0.0",
     "koa-static": "^5.0.0",
@@ -25,14 +29,17 @@
     "@vue/cli-plugin-eslint": "^4.2.0",
     "@vue/cli-service": "^4.2.0",
     "babel-eslint": "^10.0.3",
+    "concurrently": "^5.1.0",
     "cross-env": "^7.0.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.1.2",
     "koa-send": "^5.0.0",
     "lodash.merge": "^4.6.2",
+    "memory-fs": "^0.5.0",
     "resolve-path": "^1.4.0",
     "vue-server-renderer": "^2.6.11",
     "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.42.0",
     "webpack-node-externals": "^1.7.2"
   },
   "eslintConfig": {
