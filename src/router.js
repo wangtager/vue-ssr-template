@@ -9,11 +9,15 @@ export function createRouter(){
     routes: [
       {
         path: '/',
-        component: () => import(/* webpackChunkName: "demo" */ './components/HelloWorld.vue')
+        component: () => import(/* webpackChunkName: "hello" */ './components/HelloWorld.vue')
       },
       {
         path: '/demo',
         component: () => import(/* webpackChunkName: "demo" */ './components/Demo.vue')
+      },
+      {
+        path: '/about',
+        component: () => import(/* webpackChunkName: "demo" */ './components/About.vue')
       },
     ]
   })

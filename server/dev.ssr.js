@@ -59,7 +59,6 @@ const handleRequest = async ctx => {
 function renderToString(context,renderer) {
   return new Promise((resolve, reject) => {
     renderer.renderToString(context, (err, html) => {
-      console.log(html)
       err ? reject(err) : resolve(html);
     });
   });
