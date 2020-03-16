@@ -5,7 +5,14 @@
 </template>
 <script>
 export default {
-  name: 'ViewAbout'
+  name: 'About',
+  metaInfo: {
+    title: 'About Pages', // set a title
+    meta: [{                 // set meta
+      name: 'keyWords',
+      content: 'About Pages keyWords'
+    }]
+  },
 }
 </script>
 <style module>

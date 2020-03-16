@@ -6,7 +6,13 @@
 
 <script>
 export default {
-
+  metaInfo: {
+    title: 'Demo Pages', // set a title
+    meta: [{                 // set meta
+      name: 'keyWords',
+      content: 'Demo Pages keyWords'
+    }]
+  },
   name: 'Demo',
 
   data () {

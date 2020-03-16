@@ -33,6 +33,13 @@
 <script>
 export default {
   name: 'HelloWorld',
+  metaInfo: {
+    title: 'HelloWorld Pages', // set a title
+    meta: [{                 // set meta
+      name: 'keyWords',
+      content: 'HelloWorld Pages keyWords'
+    }]
+  },
   props: {
     msg: String
   }
