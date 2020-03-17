@@ -15,7 +15,7 @@ export default {
   },
 }
 </script>
-<style module>
+<style scoped>
   .about {
     color: red;
   }
